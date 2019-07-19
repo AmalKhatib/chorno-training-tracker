@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/athlete_info_background"
+    tools:context="com.example.android.chornotrainingtracker.SportTrackSession">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/athlete_info_background"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="300dp"
+            android:src="@drawable/medal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Well Done "
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:fontFamily="cursive" />
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TextView_time"
+                android:layout_alignParentLeft="true"
+                android:text="Time spent "
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TextView_speed"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/TextView_time"
+                android:layout_marginTop="5dp"
+                android:text="speed: "
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TextView_distance"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/TextView_speed"
+                android:layout_marginTop="5dp"
+                android:text="distance: "
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TextView_startTime"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/TextView_distance"
+                android:layout_marginTop="5dp"
+                android:text="from "
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TextView_endTime"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/TextView_startTime"
+                android:layout_marginTop="5dp"
+                android:text="to "
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Button_ok"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="Done"/>
+    </LinearLayout>
+
+
+</ScrollView>

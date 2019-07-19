@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Chorno Training Tracker</string>
+    <string name="title_home">Home</string>
+    <string name="title_activity">Activity</string>
+    <string name="title_calender">Calendar</string>
+    <string name="title_activity_athlete">Athlete</string>
+    <string name="title_activity_athlete_account">AthleteAccount</string>
+    <string name="start_updates">START LOCATION UPDATES</string>
+    <string name="stop_updates">STOP LOCATION UPDATES</string>
+    <string name="get_last_location">GET LAST LOCATION</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    tools:context="com.example.android.chornotrainingtracker.Lap">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            >
+
+            <TextView
+                android:text="00:00:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timerText"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textColor="#009688"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:text="play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timerText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="41dp"
+                android:id="@+id/Button_play" />
+
+            <Button
+                android:text="Pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Button_pause"
+                android:layout_alignBaseline="@+id/Button_play"
+                android:layout_alignBottom="@+id/Button_play"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:text="Reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/Button_pause"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/Button_reset" />
+
+            <Button
+                android:text="Save Lap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:id="@+id/Button_laps"
+                android:layout_below="@+id/Button_reset"
+                android:layout_centerHorizontal="true" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/Button_laps"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:id="@+id/listview1"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/Button_stop"
+            android:text="Stop"
+            android:textSize="15sp"
+            android:background="@drawable/lap_button_shape"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+           />
+
+    </LinearLayout>
+</ScrollView>
