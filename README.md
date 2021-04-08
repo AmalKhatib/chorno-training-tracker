@@ -9,3 +9,5 @@ Requirement/Functionalities:
 ● For each session the following metrics must be calculated: start time, duration, distance, average speed, maximum speed.
 
 ● The user can always Pause and Resume the session
+
+![app design](https://github.com/AmalKhatib/chorno-training-tracker/blob/master/ui.png)
